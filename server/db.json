@@ -1,0 +1,26 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Francisco",
+      "apellidos": "Palacios"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Jabon",
+      "descripcion": "Jabon Liquido",
+      "precio": "10"
+    }
+  ],
+  "ordenes": [
+    {
+      "idOrden": "1",
+      "idProducto": "1",
+      "idCliente": "1",
+      "cantidad": "1",
+      "fecha": "17/11/2021 13:09"
+    }
+  ]
+}
