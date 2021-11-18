@@ -7,21 +7,28 @@ import en from '@angular/common/locales/en';
 // ==> NG-Zorro modules
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { NzTableModule } from 'ng-zorro-antd/table';
 
 // ==> Routes
 import { AppRoutingModule } from './app-routing.module';
 
+// ==> Form
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 // ==> Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
-import { ClientesComponent } from './pages/clientes/clientes.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, ClientesComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NzTableModule],
+  declarations: [AppComponent, NavComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })

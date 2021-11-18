@@ -1,0 +1,32 @@
+<div class="contain">
+  <div class="headerTable">
+    <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+      <i nz-icon nzType="user-add" nzTheme="outline"></i>
+      Agregar
+    </button>
+  </div>
+  <div class="containerTable">
+    <nz-table #basicTable [nzData]="clientesData">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Correo</th>
+          <th>Télefono</th>
+          <th>NIT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data?.id || "" }}</td>
+          <td>{{ data?.nombre || "" }}</td>
+          <td>{{ data?.apellidos || "" }}</td>
+          <td>{{ data?.correo || "" }}</td>
+          <td>{{ data?.telefono || "" }}</td>
+          <td>{{ data?.nit || "" }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</div>

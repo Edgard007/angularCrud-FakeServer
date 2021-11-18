@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+// ==> NG Zorro
+import { NzButtonSize } from 'ng-zorro-antd/button';
+
 // ==> Interface
-import { ICliente } from '../../interfaces/cliente';
+import { ICliente } from '../../../interfaces/cliente';
 
 // ==> Services
-import { ClientesService } from '../../services/clientes/clientes.service';
+import { ClientesService } from '../../../services/clientes/clientes.service';
 
 @Component({
   selector: 'app-clientes',
@@ -12,6 +15,8 @@ import { ClientesService } from '../../services/clientes/clientes.service';
   styleUrls: ['./clientes.component.css'],
 })
 export class ClientesComponent implements OnInit {
+  // ==> Variables
+  public size: NzButtonSize = 'large';
   public clientesData: ICliente[] = [];
 
   constructor(private services: ClientesService) {}

@@ -35,3 +35,12 @@ body {
 .ant-table-content {
   overflow: auto;
 }
+
+input {
+  width: 250px;
+  padding-left: 5px;
+}
+
+label {
+  margin-right: 5px;
+}

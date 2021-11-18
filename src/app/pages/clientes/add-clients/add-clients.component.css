@@ -1,0 +1,18 @@
+.contain {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.formGroup {
+  margin-top: 10px;
+}

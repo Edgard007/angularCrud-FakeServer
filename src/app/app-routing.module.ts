@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// ==> Pages components
-import { ClientesComponent } from './pages/clientes/clientes.component';
-
 const routes: Routes = [
+  { path: '', redirectTo: 'clientes', pathMatch: 'full' },
   {
-    path: '',
-    component: ClientesComponent,
+    path: 'clientes',
+    loadChildren: () =>
+      import('./pages/clientes/cliente.module').then((m) => m.ClienteModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'clientes',
+    pathMatch: 'full',
   },
 ];
 

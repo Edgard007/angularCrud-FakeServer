@@ -18,4 +18,8 @@ export class ClientesService {
   getClientes() {
     return this.httpClient.get<ICliente[]>(`${this._baseUrl}/clientes`);
   } // End: getClientes | GET | /clientes | ICliente[]
+
+  async addClient(cliente: ICliente) {
+    return this.httpClient.post<ICliente>(`${this._baseUrl}/clientes`, cliente);
+  } // End: addCliente | POST | /clientes | ICliente
 }
