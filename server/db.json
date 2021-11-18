@@ -3,7 +3,10 @@
     {
       "id": "1",
       "nombre": "Francisco",
-      "apellidos": "Palacios"
+      "apellidos": "Palacios",
+      "correo": "mail@gmail.com",
+      "telefono": "71727374",
+      "nit": "0102-141098-123-1"
     }
   ],
   "productos": [

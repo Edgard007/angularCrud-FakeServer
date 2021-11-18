@@ -1,0 +1,27 @@
+nav {
+  height: var(--height-nav);
+  background-color: #fff !important;
+  box-shadow: 0 2px 5px rgb(0 48 136 / 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-inline {
+  justify-content: end;
+}
+
+.nameApp {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--blueColor);
+}
+
+.perfil {
+  width: 7%;
+  border-radius: 50%;
+  border: 3px #943135 solid;
+  margin-right: 10px;
+}

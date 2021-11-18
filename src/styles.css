@@ -2,3 +2,36 @@
 
 @import "~ng-zorro-antd/style/index.min.css"; /* Import base styles */
 @import "~ng-zorro-antd/button/style/index.min.css"; /* Import one component's styles */ /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  --height-nav: 68px;
+  --blueColor: #0052ff;
+}
+
+.container-body {
+  background-color: #f0f2f5;
+  width: 100%;
+  height: calc(100vh - var(--height-nav));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  background-color: #fff;
+  width: 95%;
+  height: 95%;
+  box-shadow: 0 2px 5px rgb(0 48 136 / 20%);
+}
+
+.containerTable {
+  padding: 20px;
+}
+.ant-table-content {
+  overflow: auto;
+}
